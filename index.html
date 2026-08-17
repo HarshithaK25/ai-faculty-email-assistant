@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Faculty Email Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎓 AI Faculty Email Assistant</h1>
+            <p>Create professional faculty emails quickly and easily</p>
+        </header>
+
+        <section class="email-form">
+            <div class="quick-templates">
+
+    <h3>Quick Faculty Templates</h3>
+
+   
+
+        <div class="quick-templates">
+    <h2>Quick Faculty Templates</h2>
+
+    <div class="quick-templates">
+    <h3>Quick Faculty Templates</h3>
+
+    <div class="template-list">
+
+        <div class="template-item" onclick="selectTemplate(this, 'Announcement')">
+            <span class="check-box">✓</span>
+            <span>📢 Announcement</span>
+        </div>
+
+        <div class="template-item" onclick="selectTemplate(this, 'Assignment Reminder')">
+            <span class="check-box">✓</span>
+            <span>📝 Assignment</span>
+        </div>
+
+        <div class="template-item" onclick="selectTemplate(this, 'Exam Notification')">
+            <span class="check-box">✓</span>
+            <span>📚 Exam</span>
+        </div>
+
+        <div class="template-item" onclick="selectTemplate(this, 'Attendance Reminder')">
+            <span class="check-box">✓</span>
+            <span>⚠️ Attendance</span>
+        </div>
+
+        <div class="template-item" onclick="selectTemplate(this, 'Meeting Invitation')">
+            <span class="check-box">✓</span>
+            <span>🗓️ Meeting</span>
+        </div>
+
+        <div class="template-item" onclick="selectTemplate(this, 'Event Notification')">
+            <span class="check-box">✓</span>
+            <span>🎓 Event</span>
+        </div>
+
+    </div>
+</div>
+
+            <label>Email Type</label>
+
+            <select id="emailType">
+                <option value="General Email">General Email</option>
+                <option value="Announcement">Announcement</option>
+                <option value="Assignment Reminder">Assignment Reminder</option>
+                <option value="Exam Notification">Exam Notification</option>
+                <option value="Attendance Reminder">Attendance Reminder</option>
+                <option value="Meeting Invitation">Meeting Invitation</option>
+                <option value="Event Notification">Event Notification</option>
+            </select>
+
+
+            <label>Purpose of the Email</label>
+
+            <textarea
+                id="purpose"
+                placeholder="Example: Inform students that tomorrow's class is cancelled..."
+            ></textarea>
+
+
+            <label>Important Points</label>
+
+            <textarea
+                id="points"
+                placeholder="Enter important details such as date, time, deadline, venue..."
+            ></textarea>
+
+
+            <label>Email Tone</label>
+
+            <select id="tone">
+
+                <option value="Formal">Formal</option>
+
+                <option value="Professional" selected>
+                    Professional
+                </option>
+
+                <option value="Friendly">
+                    Friendly
+                </option>
+
+            </select>
+
+
+            <button type="button" id="generateBtn">
+                ✨ Generate Email
+            </button>
+
+            <div id="statusMessage" class="status-message"></div>
+
+            <button type="button" id="chatgptBtn">
+                🤖 Generate with ChatGPT
+            </button>
+
+
+        <section class="output-section">
+
+            <h2>Generated Email</h2>
+
+            <label>Subject</label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Email subject"
+            >
+
+
+            <label>Email Body</label>
+
+             <textarea
+                id="emailBody"
+                placeholder="Your generated email will appear here. You can also edit or paste an email here."
+             ></textarea>
+
+
+            <div class="buttons">
+
+            <button type="button" id="copyBtn">
+                📋 Copy Email
+            </button>
+
+            <button type="button" id="improveBtn">
+               ✨ Improve with Grammarly
+            </button>
+
+            <button type="button" id="formalBtn">
+                🎓 Make Formal
+            </button>
+
+            <button type="button" id="shortBtn">
+                ✂️ Make Shorter
+            </button>
+
+            <button type="button" id="friendlyBtn">
+                😊 Make Friendly
+            </button>
+
+        </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
